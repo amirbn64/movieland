@@ -1,0 +1,272 @@
+/* general style */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  color: #181717;
+  font-family: system-ui;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  text-align: justify;
+}
+
+.color_med_blue {
+  color: #549df2 !important;
+}
+
+.active_color {
+  color: #318fe7 !important;
+}
+.deactive_color {
+  color: #858585 !important;
+}
+
+.text_decoration_underline {
+  text-decoration: underline !important;
+}
+/* ///////////////////////////////////////////// */
+/* top_page_sections style */
+#search_section,
+#detail_page_top_section {
+  margin-top: 4rem;
+}
+
+.search_box,
+.top_detail {
+  background: #e2e2e2;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.top_detail {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search_box_leftSide {
+  width: 70%;
+}
+
+#movie_search {
+  margin-left: 2rem;
+  height: 30px;
+  width: 35%;
+  border: 1px solid #cfcfcf;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#search_btn,
+#back_btn {
+  border: none;
+  border-radius: 20px;
+  background-color: #549df2;
+  color: #eeeeee;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#back_btn {
+  margin: 0 4rem 0 2rem;
+  padding: 0;
+}
+
+.back_btn_link {
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: block;
+}
+
+.top_detail_title_movie {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+/* ///////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////// */
+/* middle_page_sections style */
+#movie_items_section,
+#content_info_movie_section {
+  margin: 6rem 0 5rem;
+}
+
+#content_info_movie_section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie_item_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.movie_item_wrapper>div {
+    width: 360px;
+}
+
+.movie_item {
+  border: 1px solid #cfcfcf;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1.5rem 2rem 0;
+  width: 100%;
+}
+
+.movie_item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.movie_item_content_link {
+  width: -webkit-fill-available;
+}
+
+.movie_item_img img {
+    border-radius: 10px 0 0 10px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+.movie_item_content {
+  height: 100%;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie_item_title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px 0;
+  text-align: left;
+}
+
+.movie_item_kind {
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.movie_item_dateRlease {
+    text-align: left;
+}
+
+.movie_item_kind ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie_item_kind li {
+  position: relative;
+  margin-right: 14px;
+}
+
+.movie_item_kind li:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: #181717;
+  position: absolute;
+  top: 14px;
+  right: -10px;
+  border-radius: 50%;
+}
+
+.movie_item_kind li:last-of-type::after {
+  display: none;
+}
+
+.img_content_info_movie img {
+  border-radius: 25px;
+  width: 400px;
+}
+
+#content_info_movie_section ul {
+  width: -webkit-fill-available;
+  margin-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#content_info_movie_section li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.8rem 0;
+}
+/* ///////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////// */
+/* bottom_page_section style */
+#change_movie_items_btn_section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#move_story_explain_section {
+  margin-bottom: 3rem;
+}
+
+.credit {
+  display: block;
+  margin: 6rem 0 1rem;
+}
+
+.btn_page_list {
+  display: flex;
+  justify-content: center;
+  color: #858585;
+  font-weight: bold;
+}
+
+.btn_page {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.previous_btn {
+  border-right: 1px solid;
+  padding-right: 25px;
+  margin-right: 25px;
+}
+
+.next_btn {
+  color: #318fe7;
+}
+
+.result_page_number {
+  color: #989898;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
